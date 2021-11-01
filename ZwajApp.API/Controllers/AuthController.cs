@@ -46,7 +46,7 @@ namespace ZwajApp.API.Controllers
             if(userForRepo==null)return Unauthorized();
 
            var claims = new[]{
-               new Claim(ClaimTypes.NameIdentifier,userForRepo.id.ToString()),
+               new Claim(ClaimTypes.NameIdentifier,userForRepo.Id.ToString()),
                new Claim(ClaimTypes.Name,userForRepo.UserName)
            };
          
